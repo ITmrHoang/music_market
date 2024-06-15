@@ -16,6 +16,8 @@ npm install
 ```
 npm run dev
 ```
+truy cập [link](http://127.0.0.1:3001/)
+
 
 # build docker image deployment 
 

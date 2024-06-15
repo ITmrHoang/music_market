@@ -22,7 +22,7 @@ export default {
     clickSong() {
       const _recomment_song = localStorage.getItem("recomment_song") || "[]";
       const recomment_song = JSON.parse(_recomment_song);
-      if (recomment_song.findIndex((element) => element.name == this.song.name) === -1) {
+      if (recomment_song.findIndex((element) => element?.name == this.song.name) === -1) {
         let length = recomment_song.length;
         recomment_song.unshift(this.song);
         recomment_song.splice(3, length);
