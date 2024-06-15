@@ -3,7 +3,7 @@ import { ref } from "vue";
 import Banner from "./Banner.vue";
 import Card from "./Card.vue";
 import ISong from "./ISong.vue";
-import AudioPlayer from "./AudioPlayer.vue";
+// import AudioPlayer from "./AudioPlayer.vue";
 </script>
 
 <script>
@@ -75,7 +75,7 @@ export default {
         <ISong v-for="(item, index) in top_download" :key="index" :song="item" />
       </div>
     </Card>
-    <AudioPlayer/>
+    <!-- <AudioPlayer/> -->
   </div>
 </template>
 

@@ -53,6 +53,7 @@ export default {
 .audio-player {
   position: fixed;
   right: 0;
+  top:93px;
 }
 
 button {

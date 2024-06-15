@@ -3,6 +3,7 @@
     <Header />
     <main class="flex-grow">
       <router-view></router-view>
+      <AudioPlayer />
     </main>
     <Footer />
   </div>
@@ -11,10 +12,13 @@
 <script>
 import Header from "@/components/Layout/Header.vue";
 import Footer from "@/components/Layout/Footer.vue";
+import AudioPlayer from "@/components/AudioPlayer.vue";
+
 export default {
   components: {
     Header,
     Footer,
+    AudioPlayer,
   },
   setup() {
     return {};
@@ -22,18 +26,18 @@ export default {
 };
 </script>
 
-<style global>  
-header,footer {
+<style global>
+header,
+footer {
   background-color: var(--background-color);
 
   position: fixed;
-
 }
 header {
-  height: 92px
+  height: 92px;
 }
 footer {
-  height:64px;
+  height: 64px;
 }
 
 main {
@@ -49,10 +53,9 @@ main {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 * {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
 
 /* Cho màn hình nhỏ hơn 640px */
 @media not all and (min-width: 640px) {
