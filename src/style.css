@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  color: #22313F;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --header_bg: #FF3179;
+  --text_logo: #FDD602;
+  --background-color: #FFFFFF;
+  --text__title--color: #22313F;
+  --text--color: #22313F;
+  --border--color: #E1E3E9;
+
+}
+
+
+@font-face {
+  font-family: 'Pacifico';
+  src: url(./assets/Pacifico-Regular.ttf) format('truetype');
+}
+.font-pacifico {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+:root {
+  --p-autocomplete-option-focus-background: gray;
+}
+
+.p-inputtext {
+    background-color: #FFFFFF; /* Màu sáng trắng */
+    border: #ADAEBA;
+    width: 100%;
+    color: var(--text__title--color)
+  }
+
+.p-autocomplete-list {
+  background-color: #FFFFFF; /* Màu sáng trắng */
+  color: var(--text__title--color);
+  max-width: 316px !important;
+}
+
+.p-autocomplete-option {
+  color: var(--text__title--color)
+}
+@media not all and (min-width: 640px) {
+  .p-autocomplete-list {
+  max-width: 218px !important;
+
+  }
+}
